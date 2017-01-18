@@ -2,4 +2,4 @@
 
 This directory need materials to to go through the DQM4HEP packages, features using pre-built examples.
 
-Tom, this up to you !! ;-) 
+Tom, this is up to you !! ;-) 
