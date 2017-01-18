@@ -91,7 +91,7 @@
 - Importance : 2/10
 - Difficulty : 8/10
 - Time scale : very long
-- Idea : Use the DQM4HEP feature to display raw data using an external event display like DD4Hep event display, ROOT TEve dispaly, VTK tools, etc ...
+- Idea : Use the DQM4HEP feature to display raw data using an external event display like DD4Hep event display, ROOT TEve dispaly, VTK tools, etc ... Add support for different front end display, different geometry format (gdml, dd4hep, gear, etc ...). Provide a common interface to convert raw data to intepretable event display (Hit, Track, Markers, Text, etc ...) and perform conversions internally to fit the choosen front display.
 - Breaks backward compatibility ? : NO
 - Status : Not started yet
 
