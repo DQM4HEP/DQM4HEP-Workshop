@@ -74,13 +74,23 @@
 - Status : not started yet
 
 
+## Changing job control software
+
+- Importance : 9/10
+- Difficulty : 7/10
+- Time scale : medium
+- Idea : Change the job control software
+- In details : The current job control software is not secured. Any user can start a dangerous process from a client interface. Need to add a login feature to handle different users within the same deployement. This will secure a bit more the system. The new software will by procctrl (https://github.com/rete/procctrl) which is under developpment.
+- Breaks backward compatibility ? : YES (I suppose ?)
+- Status : started
+
 ## Package refactoring
 
 - Importance : 7/10
 - Difficulty : 2/10
 - Time scale : continus ...
 - Idea : split existing packages in more partitioned packages
-- In details : split and rename DQMCore (-> dqm4hep-core). Split to have only basic interfaces in dqm4hep-core, network inmplementation in dqm4hep-net, core applications in dqm4hep-core-application (not sure about this ... should maybe stay in dqm4hep-core). Rename all clases from DQMClass to Class. Add a new packagesdqm4hep-analysis-tools with helper classes dedicated for analysis modules. DQMViz split into many packages, each for a specific application (dqm4hep-monitoring-backend, dqm4hep-monitoring-qt, dqm4hep-monitoring-web, etc ...). DQM4ILC split into dqm4hep-lcio-streamer (only the lcio streamer), dqm4hep-ilc-tools for lcio specific analysis, dqm4hep-marlin-tools for Marlin specific tools only
+- In details : split and rename DQMCore (-> dqm4hep-core). Split to have only basic interfaces in dqm4hep-core, network inmplementation in dqm4hep-net, core applications in dqm4hep-core-application (not sure about this ... should maybe stay in dqm4hep-core). Rename all clases from DQMClass to Class. Add a new packages dqm4hep-analysis-tools with helper classes dedicated for analysis modules. DQMViz split into many packages, each for a specific application (dqm4hep-monitoring-backend, dqm4hep-monitoring-qt, dqm4hep-monitoring-web, etc ...). DQM4ILC split into dqm4hep-lcio-streamer (only the lcio streamer), dqm4hep-ilc-tools for lcio specific analysis, dqm4hep-marlin-tools for Marlin specific tools only
 - Why ? : Most of these packages depends on external dependencies. By spliting these packages into many, user can decide, depending on which software is available on his computer, to install some of them.
 - Breaks backward compatibility ? : YES
 - Status : started
