@@ -84,6 +84,18 @@
 - Breaks backward compatibility ? : YES (I suppose ?)
 - Status : started
 
+
+## Externalize plugin system
+
+- Importance : 7/10
+- Difficulty : 5/10
+- Time scale : short
+- Idea : Remove the DQM4HEP plugin system and replace it by an external package
+- In details : the DQM4HEP plugin system is generic enough to be pushed in an external standalone package. A project as been started (plugee : https://github.com/rete/plugee) to implement this. We will try to provide a debian package for an easy and fast installation.
+- Breaks backward compatibility ? : YES, if user uses the plugin system himself in his code
+- Status : started
+
+
 ## Package refactoring
 
 - Importance : 7/10
